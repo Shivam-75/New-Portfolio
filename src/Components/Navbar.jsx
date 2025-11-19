@@ -22,7 +22,7 @@ function Navbar() {
             className="h-6 mr-3 sm:h-9"
             alt="Logo"
           />
-          <span className="self-center sm:text-xl sm:font-semibold whitespace-nowrap  font-serif">
+          <span className="self-center sm:text-xl font-extrabold whitespace-nowrap  font-serif">
             Shivam Pandey
           </span>
         </NavLink>

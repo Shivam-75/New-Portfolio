@@ -18,8 +18,8 @@ function ProjectDetails() {
     <main className="sm:w-[90%] mx-auto px-4 font-serif py-10">
       {/* Back Button */}
       <h1
-        className="font-extrabold text-[30px] absolute hover:bg-red-500 
-                   rounded-full w-[50px] flex justify-center cursor-pointer"
+        className="font-extrabold text-[35px] absolute hover:bg-red-500 
+                   rounded-full w-[50px] flex justify-center cursor-pointer -mt-3"
         onClick={() => navigate(-1)}>
         ←
       </h1>
