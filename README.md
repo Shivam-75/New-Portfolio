@@ -1,5 +1,9 @@
-# Demo : link
+# This is My New Portfolio
 
+### This project based in React.js and Tailwind
+
+- Demo : Link
+- Git Clone : https://github.com/Shivam-75/New-Portfolio.git
 
 ```Directory structure:
 └── shivam-75-new-portfolio/
