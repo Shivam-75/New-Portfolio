@@ -5,7 +5,7 @@ function Resume() {
   return (
     <main className="h-[92vh]">
       <h1
-        className="font-extrabold text-[40px] absolute hover:bg-red-500 rounded-full w-[50px] flex justify-center cursor-pointer sm:mx-10 mt-4 mx-2 "
+        className="font-extrabold text-[30px] absolute hover:bg-red-500 rounded-full w-[50px] flex justify-center cursor-pointer sm:mx-10 mt-4 mx-2 "
         onClick={() => {
           navigate(-1);
         }}>

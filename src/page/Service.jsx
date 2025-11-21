@@ -6,7 +6,7 @@ function Service() {
   return (
     <div className="lg:h-[92vh] w-[90%] mx-auto flex my-5">
       <h1
-        className="font-extrabold text-[40px] absolute hover:bg-red-500 rounded-full w-[50px] flex justify-center cursor-pointer "
+        className="font-extrabold text-[30px] absolute hover:bg-red-500 rounded-full px-2 flex justify-center cursor-pointer"
         onClick={() => {
           navigate(-1);
         }}>

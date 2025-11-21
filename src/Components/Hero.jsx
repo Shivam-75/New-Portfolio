@@ -16,7 +16,8 @@ function Hero() {
         </h1>
 
         <p className="sm:text-lg text-md capitalize">
-          full-stack developer with 1 years in SkillVertex pvt.Ltd
+          I have been working as a Full-Stack Developer at SkillVertex for the
+          past 7 months
         </p>
 
         <div className="flex gap-2">
@@ -27,9 +28,9 @@ function Hero() {
             <span className="relative z-10 font-bold text-white">Hire Me</span>
           </a>
 
-          <button className="relative text-gray-200 dark:text-black px-6 py-2 rounded-md overflow-hidden group">
-            <span className="absolute inset-0 bg-green-600 transform -translate-x-full group-hover:translate-x-0 transition duration-300"></span>
-            <span className="relative z-10 font-bold group-hover:text-gray-800">
+          <button className="relative text-gray-200 dark:text-black px-6 py-2  rounded-md overflow-hidden group">
+            <span className="absolute inset-0 bg-green-600 transform -translate-x-full group-hover:translate-x-0  transition duration-300"></span>
+            <span className="relative z-10 font-bold hover:text-white group-hover:text-gray-800">
               Latest Projects
             </span>
           </button>
@@ -39,7 +40,7 @@ function Hero() {
         <div className="flex items-center sm:gap-10 gap-6">
           <div className="flex flex-col gap-1">
             <h4 className="text-xl sm:text-3xl font-bold">
-              1 <sup className="font-bold -ml-1">+</sup>
+              1 <sup className="font-bold -ml-1"></sup>
             </h4>
             <p className="text-sm sm:text-base text-gray-300 dark:text-gray-800">
               Years Experience

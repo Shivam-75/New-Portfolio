@@ -6,7 +6,7 @@ function Project() {
   return (
     <main className="w-[90%] mx-auto my-[20px] md:h-[90vh]">
       <h1
-        className="font-extrabold text-[40px] absolute hover:bg-red-500 rounded-full w-[50px] flex justify-center cursor-pointer"
+        className="font-extrabold text-[30px] absolute hover:bg-red-500 rounded-full px-2 flex justify-center cursor-pointer"
         onClick={() => {
           navigate(-1);
         }}>

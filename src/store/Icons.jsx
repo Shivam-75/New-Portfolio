@@ -17,7 +17,7 @@ export const skillsIconstData = [
     icon: <FaHtml5 />,
   },
   {
-    name: "JavaScript",
+    name: "JS",
     icon: <FaJs />,
   },
   {
