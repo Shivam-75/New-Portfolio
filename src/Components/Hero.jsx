@@ -96,11 +96,11 @@ function Hero() {
 
       {/* RIGHT SIDE — LAZY LOADED IMAGE */}
       <motion.div
-        className="sm:w-[30%] flex items-center justify-center mx-auto w-[60%]"
+        className=" sm:w-[30%] flex items-center justify-center mx-auto w-[90%]"
         variants={fadeIn}>
         <div className="relative rounded-lg p-2">
           <motion.img
-            src="/1731513252168 - Copy.jpg"
+            src="/me-removebg-preview.png"
             alt="Portfolio Image"
             loading="lazy"
             decoding="async"
@@ -108,7 +108,7 @@ function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: loaded ? 1 : 0, scale: loaded ? 1 : 0.95 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="rounded-full object-cover object-center"
+            className="rounded-md object-cover object-center"
           />
         </div>
       </motion.div>
