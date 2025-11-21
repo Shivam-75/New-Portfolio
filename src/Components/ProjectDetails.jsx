@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { data } from "../store/projectdt";
+import { motion } from "framer-motion";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -14,27 +15,47 @@ function ProjectDetails() {
     );
   }
 
+  // Variants
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.7, ease: "easeOut" },
+    },
+  };
+
+  const staggerContainer = {
+    hidden: {},
+    visible: { transition: { staggerChildren: 0.2 } },
+  };
+
   return (
-    <main className="sm:w-[90%] mx-auto px-4 font-serif py-10">
+    <motion.main
+      className="sm:w-[90%] mx-auto px-4 font-serif py-10"
+      initial="hidden"
+      animate="visible"
+      variants={staggerContainer}>
       {/* Back Button */}
-      <h1
+      <motion.h1
         className="font-extrabold text-[30px] absolute hover:bg-red-500 rounded-full px-2 flex justify-center cursor-pointer"
-        onClick={() => {
-          navigate(-1);
-        }}>
+        onClick={() => navigate(-1)}
+        variants={fadeUp}>
         ←
-      </h1>
+      </motion.h1>
 
       {/* Title */}
-      <header>
+      <motion.header variants={fadeUp}>
         <h1 className="text-[18px] sm:text-4xl font-extrabold text-blue-700 text-center mb-10">
           {selected.ProjectName}
         </h1>
-      </header>
+      </motion.header>
 
       {/* Main Image Section */}
-      <figure className="grid md:grid-cols-2 sm:p-3 grid-cols-1">
-        {/* Main Project Image with fade-in */}
+      <motion.figure
+        className="grid md:grid-cols-2 sm:p-3 grid-cols-1 gap-6"
+        variants={fadeUp}>
+        {/* Main Project Image */}
         <LazyImage
           src={selected.image}
           alt={selected.ProjectName}
@@ -58,10 +79,12 @@ function ProjectDetails() {
             </p>
           </section>
         </section>
-      </figure>
+      </motion.figure>
 
       {/* All Screenshots */}
-      <figure className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 gap-8">
+      <motion.figure
+        className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 gap-8"
+        variants={staggerContainer}>
         {selected?.ssImgs.map((item, index) => (
           <LazyImage
             key={index}
@@ -70,8 +93,8 @@ function ProjectDetails() {
             className="rounded-md"
           />
         ))}
-      </figure>
-    </main>
+      </motion.figure>
+    </motion.main>
   );
 }
 
@@ -82,7 +105,11 @@ function LazyImage({ src, alt, className }) {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="relative">
+    <motion.div
+      className="relative"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 20 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}>
       {/* Skeleton Loader */}
       {!loaded && (
         <div className="w-full h-[200px] sm:h-[250px] bg-gray-300 animate-pulse rounded-md absolute top-0 left-0"></div>
@@ -99,7 +126,7 @@ function LazyImage({ src, alt, className }) {
           loaded ? "opacity-100" : "opacity-0"
         }`}
       />
-    </div>
+    </motion.div>
   );
 }
 

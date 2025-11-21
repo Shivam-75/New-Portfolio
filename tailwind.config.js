@@ -17,12 +17,18 @@ export default {
           '0%': { width: '0%' },
           '100%': { width: '100%' },
         },
+        fog: {
+          "0%": { transform: "translateX(-20%) translateY(-10%) scale(1.1)" },
+          "50%": { transform: "translateX(10%) translateY(5%) scale(1.15)" },
+          "100%": { transform: "translateX(-10%) translateY(-5%) scale(1.1)" },
+        },
 
       },
 
       animation: {
         marquee: "marquee 16s linear infinite",
         typing: 'typing 3s steps(20, end) forwards infinite',
+        fog: "fog 18s ease-in-out infinite",
       },
     },
   },
