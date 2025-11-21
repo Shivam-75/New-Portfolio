@@ -2,7 +2,7 @@ export const data = [
   {
     id: 1,
     location: "Gorakhpur",
-    date: "20 / 10 / 2004",
+    date: "25 / 10/ 2025",
     Content: "DEMO",
     ProjectName: "Blood Bank System",
     buttons: "Project Details",
@@ -31,7 +31,7 @@ export const data = [
   {
     id: 2,
     location: "Gorakhpur",
-    date: "20 / 10 / 2025",
+    date: "20 / 8 / 2025",
     Content: "DEMO",
     buttons: "Project Details",
     ProjectName: "Pathology Management",
