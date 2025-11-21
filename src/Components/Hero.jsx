@@ -11,7 +11,9 @@ function Hero() {
         <h1 className="xl:text-6xl lg:text-6xl md:text-5xl text-4xl font-semibold">
           Hi there, I am
         </h1>
-        <h1 className="xl:text-6xl lg:text-6xl md:text-5xl text-4xl font-semibold text-green-600 overflow-hidden whitespace-nowrap  animate-typing animate-blink">
+        <h1
+          className="xl:text-6xl lg:text-6xl md:text-5xl text-4xl font-semibold text-green-600 overflow-hidden whitespace-nowrap   animate-typing animate-blink 
+">
           Shivam Pandey
         </h1>
 
@@ -29,7 +31,7 @@ function Hero() {
           </a>
 
           <button className="relative text-gray-200 dark:text-black px-6 py-2  rounded-md overflow-hidden group">
-            <span className="absolute inset-0 bg-green-600 transform -translate-x-full group-hover:translate-x-0  transition duration-300"></span>
+            <span className="absolute inset-0 bg-green-600 transform -translate-x-full group-hover:translate-x-0  transition duration-300 text-white"></span>
             <span className="relative z-10 font-bold hover:text-white group-hover:text-gray-800">
               Latest Projects
             </span>

@@ -33,7 +33,7 @@ export const skillsIconstData = [
     icon: <FaReact />,
   },
   {
-    name: "Framer Motion",
+    name: "Motion",
     icon: <SiFramer />,
   },
   {
