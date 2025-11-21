@@ -18,7 +18,7 @@ function Resume() {
       <section className="flex justify-center items-center  gap-4 flex-col">
         <div className="flex gap-2 border shadow-2xl rounded-md ">
           <iframe
-            src="https://drive.google.com/file/d/1O6CGt3fCAPUimykIAW6VKmkMWeNcMO2s/preview"
+            src="https://drive.google.com/file/d/1vc1zi641_d4YqfjANSvkt99P4bzg5wr0/view"
             width="100%"
             height="423px"
             allow="autoplay"
