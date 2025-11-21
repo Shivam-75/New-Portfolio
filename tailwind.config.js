@@ -13,11 +13,16 @@ export default {
           "50%": { transform: "translateX(180%)" },
           "100%": { transform: "translateX(-320%)" },
         },
+        typing: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
 
       },
 
       animation: {
         marquee: "marquee 16s linear infinite",
+        typing: 'typing 3s steps(20, end) forwards infinite',
       },
     },
   },

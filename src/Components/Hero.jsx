@@ -11,7 +11,7 @@ function Hero() {
         <h1 className="xl:text-6xl lg:text-6xl md:text-5xl text-4xl font-semibold">
           Hi there, I am
         </h1>
-        <h1 className="xl:text-6xl lg:text-6xl md:text-5xl text-4xl font-semibold text-green-600">
+        <h1 className="xl:text-6xl lg:text-6xl md:text-5xl text-4xl font-semibold text-green-600 overflow-hidden whitespace-nowrap  animate-typing animate-blink">
           Shivam Pandey
         </h1>
 
