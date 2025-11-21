@@ -44,7 +44,7 @@ function Hero2() {
           alt="Experience"
           loading="lazy"
           decoding="async"
-          className="sm:w-[30%] rounded-lg shadow-xl"
+          className="sm:w-[30%] rounded-lg "
         />
       </motion.figure>
 
@@ -54,7 +54,7 @@ function Hero2() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}>
-        {experienceData.map((item, i) => (
+        {experienceData.map((item) => (
           <motion.div
             key={item.id}
             className="shadow-2xl border p-5 rounded-md bg-white"

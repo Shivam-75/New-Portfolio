@@ -27,7 +27,7 @@ function Skill() {
           return (
             <div
               key={idx}
-              className="bg-white border rounded-lg shadow-2xl h-[80px] w-[80px] flex flex-col justify-center items-center p-4 hover:scale-110 duration-200">
+              className="bg-white border rounded-lg shadow-2xl h-[90px] w-[90px] flex flex-col justify-center items-center p-4 hover:scale-110 duration-200">
               <h2 className="text-[45px] font-extrabold hover:scale-105">
                 {section.icon}
               </h2>

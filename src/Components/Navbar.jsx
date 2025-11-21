@@ -14,15 +14,15 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-white text-black py-3.5 shadow-2xl  ">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+    <nav className="bg-white text-black py-3.5 shadow-2xl 2xl:py-10 ">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto 2xl:max-w-screen-2xl">
         <NavLink to={"/"} className="flex items-center ">
           <img
             src="https://www.svgrepo.com/show/499962/music.svg"
             className="h-6 mr-3 sm:h-9"
             alt="Logo"
           />
-          <span className="self-center sm:text-xl font-extrabold whitespace-nowrap  font-serif">
+          <span className="self-center sm:text-xl font-extrabold whitespace-nowrap  font-serif  2xl:text-[30px]">
             Shivam Pandey
           </span>
         </NavLink>
@@ -31,12 +31,12 @@ function Navbar() {
         <div className="flex items-center lg:order-2">
           <NavLink
             to="https://www.linkedin.com/in/shivam-pandey-80966b344"
-            className="text-[25px]  duration-100 px-2">
+            className="text-[25px] 2xl:text-[50px]  duration-100 px-2">
             <FaLinkedinIn className="hover:scale-110" />
           </NavLink>
           <NavLink
             to="https://www.github.com/Shivam-75"
-            className="text-[25px]  duration-100">
+            className="text-[25px]  2xl:text-[50px]  duration-100">
             <FaGithub className="hover:scale-110" />
           </NavLink>
 
@@ -59,14 +59,14 @@ function Navbar() {
         <div
           className={`${
             menu ? "block" : "hidden"
-          } w-full lg:flex items-center justify-between lg:w-auto lg:order-1`}>
+          } w-full lg:flex items-center justify-between lg:w-auto lg:order-1 `}>
           {navItems.map((item) => (
             <NavLink
               key={item.id}
               to={item.route}
               onClick={() => setMenu(!menu)}
               className={({ isActive }) =>
-                `block py-2 pl-3 pr-2 rounded  md:mx-6 text-md font-semibold font-serif ${
+                `block py-2 pl-3 2xl:text-[25px] pr-2 rounded  md:mx-6 text-md font-semibold font-serif ${
                   isActive
                     ? "text-purple-700 font-bold underline underline-offset-4"
                     : "text-gray-700 hover:text-red-600 "
