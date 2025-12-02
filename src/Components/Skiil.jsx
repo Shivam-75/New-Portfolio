@@ -1,5 +1,4 @@
 import { skillsIconstData } from "../store/Icons";
-import { motion } from "framer-motion";
 
 function Skill() {
   const scrollVariants = {
