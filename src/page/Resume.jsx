@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
 function Resume() {
   const navigate = useNavigate();
 
