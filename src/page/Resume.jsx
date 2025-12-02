@@ -50,7 +50,7 @@ function Resume() {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}>
           <iframe
-            src="https://drive.google.com/file/d/1vc1zi641_d4YqfjANSvkt99P4bzg5wr0/view"
+            src="https://drive.google.com/file/d/14OxMAmBPaqA5qSim6VGwOrZwGipJRQJx/view"
             width="100%"
             height="423px"
             allow="autoplay"
