@@ -50,7 +50,7 @@ function Resume() {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}>
           <iframe
-            src="https://drive.google.com/file/d/14OxMAmBPaqA5qSim6VGwOrZwGipJRQJx/view"
+            src="https://new-portfolios-orcin.vercel.app/Shivam_Resume.pdf"
             width="100%"
             height="423px"
             allow="autoplay"
