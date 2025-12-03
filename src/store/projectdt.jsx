@@ -56,4 +56,26 @@ export const data = [
     description:
       "The Pathology Management System is a full-stack MERN-based digital solution for diagnostic labs and clinics. It includes secure JWT authentication with role-based access for admins, doctors, and patients. Admins can manage tests, create bills, track patients, generate date-wise analytics, and export invoices as PDFs. Patients can browse tests, book appointments, view pricing, and track their medical reports online. The project improved my skills in authentication, PDF generation, database modeling, and real-world healthcare workflow implementation.",
   },
+  {
+    id: 3,
+    location: "Gorakhpur",
+    date: "1/ 12/ 2025",
+    Content: "Profile",
+    ProjectName: "backend-cli-folder-creater ",
+    buttons: "Project Details",
+    link: "https://www.npmjs.com/package/backend-cli-folder-creater",
+    width: 320,
+    height: 192,
+
+    image: "/Screenshot 2025-12-03 114931.png",
+
+    ssImgs: [
+      "/Screenshot 2025-12-03 143734.png",
+      "/Screenshot 2025-12-03 143929.png",
+      "/Screenshot 2025-12-03 144013.png",
+    ],
+
+    description:
+      "Set up fully structured backend projects with a single command, including automatic server setup, saving hours of repetitive work. Already trusted by developers with 1,400+ weekly downloads! Perfect for Node.js APIs, microservices, or any backend project.",
+  },
 ];

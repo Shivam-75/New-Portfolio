@@ -31,10 +31,10 @@ function Hero2() {
   };
 
   return (
-    <main className="sm:py-7 w-[90%] mx-auto mb-9">
-      {/* Lazy Image */}
+    <main className="flex w-[90vmin] sm:w-[80%] flex-col  mx-auto mb-9">
+      {/* Lazy Image */}{" "}
       <motion.figure
-        className="my-10 flex justify-center"
+        className="my-10 w-[100%] flex justify-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -44,12 +44,10 @@ function Hero2() {
           alt="Experience"
           loading="lazy"
           decoding="async"
-          className="sm:w-[30%] rounded-lg "
+          className=" rounded-lg w-[50%]"
         />
       </motion.figure>
-
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 gap-5"
         variants={container}
         initial="hidden"
         whileInView="visible"
